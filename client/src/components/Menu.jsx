@@ -4,7 +4,7 @@ export default function Menu() {
   const [foods, setFoods] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:1111/api/foods`)
+    fetch(`https://cravowetra.onrender.com/api/foods`)
       .then((res) => res.json())
       .then((data) => {
         console.log("Kelgan data:", data);

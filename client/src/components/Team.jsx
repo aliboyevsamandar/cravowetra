@@ -7,7 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 export default function Team() {
   const [chefs, setChefs] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:1111/api/chefs`) // 🔗 serverdan ma'lumot olish
+    fetch(`https://cravowetra.onrender.com/api/chefs`) // 🔗 serverdan ma'lumot olish
       .then((res) => res.json())
       .then((data) => setChefs(data))
       .catch((err) => console.error("Xatolik:", err));
