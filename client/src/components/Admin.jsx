@@ -23,7 +23,7 @@ export default function Admin() {
   const [isEditingChef, setIsEditingChef] = useState(false);
   const [editingChefId, setEditingChefId] = useState(null);
 
-  const API_BASE = import.meta.env.VITE_API_URL;
+  const API_BASE = `http://localhost:1111/api`;
 
   useEffect(() => {
     if (token) fetchData();

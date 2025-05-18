@@ -4,7 +4,7 @@ export default function Menu() {
   const [foods, setFoods] = useState([]);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/foods`)
+    fetch(`http://localhost:1111/api/foods`)
       .then((res) => res.json())
       .then((data) => {
         console.log("Kelgan data:", data);
